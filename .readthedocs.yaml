@@ -1,0 +1,14 @@
+version: 2
+
+build:
+  image: testing
+
+sphinx:
+  configuration: :Dosepy_GUI/docs/conf.py
+
+python:
+  version: "3.9"
+  install:
+    - method: pip
+      path: Dosepy_API
+    - requirements: Dosepy_API/docs/requirements.txt
